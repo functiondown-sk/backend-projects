@@ -36,11 +36,13 @@ const login = async function (req, res) {
                 batch: "Lithium",
                 project: "project1",
             },
-            "functionup-secret-key"
+            "functionup-secret-key",
+   
         );
 
         res.setHeader("x-api-key", token);
         res.status(200).send({ status: true, msg: "Successful-login-Response-structure", data: token });
+
 
     } catch (Err) {
         return res.status(500).send({ status: false, msg: Err.message });

@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 const { isValidObjectId } = require("mongoose");                // Inbuilt function of mongoose to check any id is valid object id or not
 
 
-//2nd- post API------------------------------------------------------------------------------------------------
+//1st- post API------------------------------------------------------------------------------------------------
 
 const createBlog = async function (req, res) {
 
@@ -36,7 +36,7 @@ const createBlog = async function (req, res) {
 
 
 
-//3rd- get blog API---------------------------------------------------------------------------------------
+//2nd- get blog API---------------------------------------------------------------------------------------
 
 const getBlog = async function (req, res) {
     try {
@@ -80,7 +80,7 @@ const getBlog = async function (req, res) {
 }
 
 
-//4th - PUT /blogs/:blogId--------------------------------------------------------------------------------
+//3rd - PUT /blogs/:blogId--------------------------------------------------------------------------------
 
 
 const updateAllBlogs = async function (req, res) {
@@ -129,7 +129,7 @@ const updateAllBlogs = async function (req, res) {
         return res.status(201).send({ status:true,msg: blogData })
     }
     catch (error) {
-        res.status(500).send({ status: false,msg: error.message })
+        res.status(500).send({ status: false,msg: error.message })-
         console.log({ msg: error.message })
     }
 };
@@ -137,7 +137,7 @@ const updateAllBlogs = async function (req, res) {
 
 
 
-// 5th- DELETE /blogs/:blogId--------------------------------------------------------------------------------
+// 4th- DELETE /blogs/:blogId--------------------------------------------------------------------------------
 
 const deleteBlog = async function (req, res) {
     try {
@@ -167,7 +167,7 @@ const deleteBlog = async function (req, res) {
 
 
 
-// 6th -DELETE /blogs?queryParams---------------------------------------------------------------------------
+// 5th -DELETE /blogs?queryParams---------------------------------------------------------------------------
 
 const DeleteByQuery = async function (req, res) {
     try {
