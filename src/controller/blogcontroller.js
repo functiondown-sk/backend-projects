@@ -2,7 +2,7 @@ const Authormodel = require('../model/Authormodel')             // Importing Aut
 const blogModel = require('../model/blogmodel')                 // Importing blogmodel   from  blogmodel.js  module
 
 const mongoose = require('mongoose')
-const { isValidObjectId } = require("mongoose");                // Inbuilt function of mongoose to check any id is valid object id or not
+const { isValidObjectId } = require("mongoose");                // Inbuild function of mongoose to check any id is valid object id or not
 
 
 //1st- post API------------------------------------------------------------------------------------------------
